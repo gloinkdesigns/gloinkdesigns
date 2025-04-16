@@ -1,0 +1,204 @@
+@media (max-width: 1120px ){
+    html{
+        font-size: 54%;
+    }
+
+    .intro-img{
+        max-width: 200px;
+        width: 80%;
+    }
+
+    .img-about, .img-portfolio{
+        max-width: 200px;
+    }
+
+    .arrow-icon{
+        height: 28px;
+    }
+
+    .card{
+        padding: 8px;
+    }
+
+}
+
+@media (max-width: 992px ){
+    html{
+        font-size: 48%;
+    }
+
+    :root{
+        --text-h4: 3rem;
+        --text-md: 1.8rem;
+    }
+    
+    .img-about, .img-portfolio{
+        /* max-width: 150px; */
+        width: 100%;
+    }
+
+    .arrow-icon{
+        height: 24px;
+    }
+
+    .intro-img{
+        max-width: 140px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 786px ){
+    :root{
+        --text-h3: 2.5rem;
+        --text-h4: 2rem;
+    }
+
+    header{
+        margin-bottom: 3rem;
+    }
+
+    .nav-logo{
+        max-width: 60px;
+    }
+
+    .menu-item{
+        display: none;
+    }
+
+    .menu-icon-mobile{
+        display: block;
+    }
+
+
+    .intro-section{
+        flex-direction: column;
+    }
+
+    .card-intro{
+        width: 100%;
+    }
+
+    .intro-right{
+        flex-direction: row-reverse;
+    }
+
+    .card-waitlist{
+        flex-direction: column;
+    }
+
+    .card-waitlist p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        align-self: center;
+        text-align: center;
+    }
+
+    .img-about, .img-portfolio{
+        max-width: none;
+        width: 100%;
+    }
+
+    .service-section{
+        flex-direction: column;
+    }
+
+    .card-services{
+        width: 100%;
+    }
+
+    .services{
+        gap: 6px;
+        overflow: scroll;
+    }
+
+    .service-icons{
+        max-width: none;
+        width: 100%;
+        display: grid;
+    }
+
+    .intro-service01, .intro-service02, .intro-service03, .intro-service04, .intro-service05{
+        min-width: 92px;
+    }
+
+    .card-socials{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .social-icons-group{
+        gap:20px
+    }
+
+    .cta-left{
+        gap:6px
+    }
+}
+
+@media (max-width: 482px ){
+    :root{
+        --text-h3: 2.8rem;
+        --text-h4: 2.5rem;
+    }
+
+    .intro-right{
+        flex-direction: column;
+    }
+
+    .card-waitlist{
+        flex-direction: row;
+    }
+
+    .card-waitlist p, .card-waitlist .btn{
+        text-align: left;
+    }
+
+    .cta-section{
+        flex-direction: column;
+    }
+
+    .cta-left, .card-cta{
+        width: 100%;
+    }
+
+    .arrow-icon{
+        height: 20px;
+    }
+
+    .card-cta{
+        padding: 20px;
+    }
+
+    .card-exp, .card-client, .card-projects{
+        height: 100px
+    }
+
+    .card-socials{
+        padding: 10px 20px;
+    }
+
+    .social-icon{
+        width: 32px;
+    }
+
+    .social-icons-group{
+        gap: 6px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
