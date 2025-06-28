@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glo Ink Designs</title>
+
+    <!-- Linking Swiper CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="./CSS/global.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <header class="header">
+        <nav class="container">
+            <ul class="menu">
+                <li class="menu-item"><a href="./index.html" class="item">Home</a>
+                </li>
+                <li class="menu-item"><a href="./about.html" class="item">About</a></li>
+                <li class="menu-item"><a href="./portfolio.html" class="item">Projects</a></li>
+                <li><a href=""><img class="nav-logo" src="./images/logo/logo-light-gloinkdesigns.png"
+                            alt="gloinkdesigns logo"></a></li>
+                <li class="menu-item"><a href="./service.html" class="item">Services</a></li>
+                <!-- <li class="menu-item"><a href="" class="item">Blog</a></li> -->
+                <li class="menu-item"><a href="https://gloinkdesigns-waitlist.carrd.co/" class="item">Waitlist</a></li>
+                <li class="menu-item"><a href="./contact.html" class="item"><button class="btn btn-nav">Lets
+                            Talk</button></a></li>
+                <li class="menu-icon-mobile"><a class="menu-icon" href="./menu.html">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </a></li>
+            </ul>
+            <img src="./images/flower-shape.png" alt="Flower" id="flower-bg" />
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="contact-section">
+            <!-- CONTACT FORM  -->
+            <section class="contact-content">
+                <div class="contact-heading">
+                    <h1>Lets Chat!</h1>
+                </div>
+                <div class="card contact-form">
+                    <p>Tell me your requirements and I will get back to you as soon as possible.</p>
+                    <form id="contactForm" action="https://formspree.io/f/manogeeq" method="POST">
+                        <div class="form-usertype">
+                            <label for="user_type" class="contact-labels">I am a</label>
+                            <div class="radio-group" id="user_type">
+                                <label class="radio-btn">
+                                    <input type="radio" name="user_type" value="Author">
+                                    Author/Writer
+                                </label>
+                                <label class="radio-btn">
+                                    <input type="radio" name="user_type" value="Business Owner">
+                                    Business Owner
+                                </label>
+                                <label class="radio-btn">
+                                    <input type="radio" name="user_type" value="Company">
+                                    Company
+                                </label>
+                                <label class="radio-btn">
+                                    <input type="radio" name="user_type" value="Individual">
+                                    Individual
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-username">
+                            <label for="username" class="contact-labels"> My name is </label>
+                            <div class=" username-group">
+                                <input type="text" id="username" name="firstname" placeholder="Firstname" required>
+                                <input type="text" id="lastusername" name="lastname" placeholder="Lastname">
+                            </div>
+                        </div>
+                        <div class="form-ighandle">
+                            <label for="ighandle" class="contact-labels label-2"> My instagram is </label>
+                            <input type="text" id="ighandle" name="ighandle" placeholder="@username or URL">
+                        </div>
+                        <div class="form-email">
+                            <label for="email" class="contact-labels label-2"> You can email me at </label>
+                            <input type="email" id="email" name="email" placeholder="email address" required>
+                        </div>
+                        <div class="form-message">
+                            <label for="messagebox" class="contact-labels label-2"> I would like to know about...
+                            </label>
+                            <textarea name="messagebox" rows="5" placeholder="Enter your message here"></textarea>
+                        </div>
+                        <button class="btn btn-primary btn-send send-button" type="submit">Send<img
+                                src="./images/arrow-green.png" alt=""></button>
+                    </form>
+                </div>
+
+            </section>
+
+            <!-- CONTACT DETAILS -->
+            <section class="contact-details">
+                <div class="card card-contact">
+                    <h4 class="contact-info-heading">Contact</h4>
+                    <div class="contact-info">
+                        <img class="contact-info-icon" src="./images/icons/icon-call.png" alt="call icon">
+                        <p class="contact-info-text">+91 8848 11 32 87</p>
+                    </div>
+                    <a class="contact-info" href=""><img class="contact-info-icon" src="./images/icons/icon-mail.png"
+                            alt="email icon">
+                        <p class="contact-info-text">athira@gloinkdesigns.com</p>
+                    </a>
+                    <div class="contact-info">
+                        <img class="contact-info-icon" src="./images/icons/icon-web.png" alt="website icon">
+                        <p class="contact-info-text">www.gloinkdesigns.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <img class="contact-info-icon" src="./images/icons/icon-place.png" alt="location icon">
+                        <p class="contact-info-text">Thrissur, Kerala, India</p>
+                    </div>
+
+                </div>
+                <div class="card card-social">
+                    <div class="socials-heading">
+                        <h4 class="contact-info-heading">Socials</h4>
+                        <p class="social-info-text">@gloinkdesigns</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href=""><img class="social-icon" src="./images/icons/icon-instagram.png" alt=""></a>
+                        <a href=""><img class="social-icon" src="./images/icons/icon-linkedin.png" alt=""></a>
+                        <a href=""><img class="social-icon" src="./images/icons/icon-behance.png" alt=""></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <img class="success-img" src="./images/sent_success.gif" alt="illustration for message sent successfully">
+            <h4 class="success-heading">Yay! Message send Successfully.</h4>
+            <p>Your message has been sent to Athira. She will get back to you as soon as possible. Can't wait to
+                work with you!</p>
+        </div>
+    </div>
+
+
+    <!-- THIS IS THE FLOWER ANIMATION ON HOVER OF MENU ITEMS -->
+    <script>
+        const flower = document.getElementById('flower-bg');
+        const navItems = document.querySelectorAll('.item');
+
+        navItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                flower.style.display = 'block';
+                flower.style.display = 'block';
+                flower.classList.add('spin');
+            });
+
+            item.addEventListener('mousemove', (e) => {
+                const rect = item.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                // Optional offsets to center the flower image
+                const offsetX = -25; // half of flower width (if 50px)
+                const offsetY = -25;
+
+                flower.style.left = `${rect.left + x + offsetX}px`;
+                flower.style.top = `${rect.top + y + offsetY}px`;
+            });
+
+            item.addEventListener('mouseleave', () => {
+                flower.style.display = 'none';
+                flower.style.display = 'none';
+                flower.classList.remove('spin');
+            });
+        });
+
+
+    </script>
+
+    <!-- To check validate form inputs and display message -->
+    <script>
+        const form = document.getElementById("contactForm");
+        const modal = document.getElementById("successModal");
+        const closeModal = document.getElementById("closeModal");
+
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        form.addEventListener("submit", async function (e) {
+            const radios = form.querySelectorAll('input[name="user_type"]');
+            const isRadioChecked = Array.from(radios).some(radio => radio.checked);
+
+            if (!isRadioChecked) {
+                e.preventDefault();
+                alert("Please select an option for 'I am a'");
+                return;
+            }
+
+            if (!form.checkValidity()) {
+                e.preventDefault();
+                alert("Please fill in all required fields before submitting.");
+                return;
+            }
+
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    console.log("Success response!"); // debugging
+                    modal.style.display = "flex";  // Use flex here to show modal properly
+                    form.reset();
+                } else {
+                    alert("Oops! Something went wrong. Please try again.");
+                }
+            } catch (error) {
+                alert("Network error. Please check your connection and try again.");
+            }
+        });
+    </script>
+</body>
+
+</html>

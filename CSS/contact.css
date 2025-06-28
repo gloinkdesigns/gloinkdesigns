@@ -1,0 +1,269 @@
+.header{
+  margin-bottom: 20px;
+}
+
+.btn-nav{
+    color: var(--primary-acsent);
+    font-weight: 700;
+}
+
+.contact-heading{
+    padding-left: 20px;
+    margin-bottom: -22px;
+}
+
+.contact-section{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* ------------ CONTACT FORM ------------ */
+
+.contact-content{
+  width: 70%;
+}
+
+/* -------RADIO BUTTONS------- */
+.contact-form>p{
+    color: var(--grey);
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.form-usertype{
+    display: flex;
+    gap: 78px;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-labels{
+    font-size: var(--text-para);
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.radio-btn {
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #c7bce0;
+  border-radius: 25px;
+  background-color: #f3edf5;
+  color: #3c3c3c;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+/* Hide the actual radio button */
+.radio-btn input[type="radio"] {
+  display: none;
+}
+
+/* Style when selected */
+.radio-btn input[type="radio"]:checked + label,
+.radio-btn input[type="radio"]:checked ~ span {
+  background-color: #ffb3dc; /* soft pink */
+  border-color: #ff67c3;
+  font-weight: bold;
+}
+
+.radio-btn:has(input[type="radio"]:checked) {
+  background-color: #ffb3dc;
+  border-color: #ff67c3;
+  font-weight: bold;
+}
+
+/* -------TEXTFIELDS------- */
+
+.form-username, .form-ighandle, .form-email{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 20PX;
+}
+
+.username-group{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+input[type="text"], input[type="email"]{
+    height: 44px;
+    border-radius: 10px;
+    border: 2px solid var(--primary-light);
+    outline: none;
+    color: #646469;
+    font-size: 14px;
+    padding: 10px;
+    font-family: var(--font-family-lexend);
+    width: 100%;
+}
+
+.label-2{
+  min-width: 150px;
+}
+
+.form-message{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10PX;
+}
+
+textarea{
+    border-radius: 10px;
+    border: 2px solid var(--primary-light);
+    outline: none;
+    color: #646469;
+    font-size: 14px;
+    padding: 10px;
+    font-family: var(--font-family-lexend);
+    width: 100%;
+    resize: vertical;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: var(--grey);
+  opacity: 0.5; 
+}
+
+
+textarea:focus, input[type="text"]:focus, input[type="email"]:focus {
+    border-color: var(--primary-acsent);
+  }
+
+.btn-send{
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.send-button{
+  justify-self: end;
+}
+
+/* -------CONTACT DETAILS------- */
+
+.contact-details{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-contact{
+    padding-right: 40px;
+}
+
+.contact-info-heading{
+  color: var(--primary-acsent);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-info{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-info-icon{
+  width: 100%;
+  max-width: 20px;
+}
+
+.contact-info-text, .social-info-text{
+  color: var(--grey);
+}
+
+.socials-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons{
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon{
+  width: 100%;
+  max-width: 40px;
+  opacity: 30%;
+  filter: brightness(0);
+}
+
+.social-icon:hover{
+  opacity: 100%;
+  filter: brightness(1);
+}
+
+/* -------SUCCESS/FAILED MESSAGE POP-UP------- */
+
+/* The Modal (background) */
+.modal {
+  display: none; /*Hidden by default*/
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from top and centered */
+  padding: 30px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.success-heading{
+  color: var(--primary-acsent);  
+  margin-bottom: 10px;
+}
+
+.success-img{
+  max-width: 200px;
+  width: 100%;
+  margin: -20px;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: 300;
+  cursor: pointer;
+  user-select: none;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--primary-acsent);
+  text-decoration: none;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloinkdesigns</title>
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="./CSS/global.css">
+    <link rel="stylesheet" href="./CSS/project.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <header class="header">
+        <nav class="container">
+            <ul class="menu">
+                <li class="menu-item"><a href="./index.html" class="item">Home</a>
+                </li>
+                <li class="menu-item"><a href="./about.html" class="item">About</a></li>
+                <li class="menu-item-selected"><a href="./portfolio.html" class="item">Projects</a></li>
+                <li><a href=""><img class="nav-logo" src="./images/logo/logo-light-gloinkdesigns.png"
+                            alt="gloinkdesigns logo"></a></li>
+                <li class="menu-item"><a href="./service.html" class="item">Services</a></li>
+                <!-- <li class="menu-item"><a href="" class="item">Blog</a></li> -->
+                <li class="menu-item"><a href="https://gloinkdesigns-waitlist.carrd.co/" class="item">Waitlist</a></li>
+                <li class="menu-item"><a href="./contact.html" class="item"><button class="btn btn-nav">Lets
+                            Talk</button></a></li>
+                <li class="menu-icon-mobile"><a class="menu-icon" href="./menu.html">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </a></li>
+            </ul>
+            <img src="./images/flower-shape.png" alt="Flower" id="flower-bg" />
+        </nav>
+    </header>
+
+    <!-- MAIN PROJECTS GRID SECTION -->
+    <main class="container">
+        <section class="portfolio">
+            <div class="portfolio-head">
+                <h1 class="portfolio-heading">PORTFOLIO</h1>
+                <div class="portfolio-filters">
+                    <select name="portfolio-filter" id="portfolio-filter">
+                        <option value="all">All Projects</option>
+                        <option value="portrait">Portraits</option>
+                        <option value="books">Books & Characters</option>
+                        <option value="brand">Logo & Branding</option>
+                        <option value="web">Web Design</option>
+                    </select>
+                    <select name="portfolio-sort" id="portfolio-sort">
+                        <option value="all">Newest First</option>
+                        <option value="portrait">Oldest First</option>
+                    </select>
+                </div>
+            </div>
+            <div class="portfolio-grid">
+                <a class="portfolio-item" href="project.html?id=coffeepeople">
+                    <div class="card-portfolio" data-category="books" data-date="2025-06-06">
+                        <img class="project-cover" src="./images/projects/bookcovers/coffeepeople/cover.png" alt="">
+                        <h6>Coffee People</h6>
+                        <p>Book Cover</p>
+                    </div>
+                </a>
+                <a class="portfolio-item" href="project.html?id=coffeepeople">
+                    <div class="card-portfolio" data-category="books" data-date="2025-06-06">
+                        <img class="project-cover" src="./images/projects/bookcovers/coffeepeople/cover.png" alt="">
+                        <h6>Coffee People</h6>
+                        <p>Book Cover</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

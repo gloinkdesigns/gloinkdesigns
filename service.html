@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gloinkdesigns</title>
+
+    <!-- Linking Swiper CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="./CSS/global.css">
+    <link rel="stylesheet" href="./CSS/service.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <header class="header">
+        <nav class="container">
+            <ul class="menu">
+                <li class="menu-item"><a href="./index.html" class="item">Home</a>
+                </li>
+                <li class="menu-item"><a href="./about.html" class="item">About</a></li>
+                <li class="menu-item"><a href="./portfolio.html" class="item">Projects</a></li>
+                <li><a href=""><img class="nav-logo" src="./images/logo/logo-light-gloinkdesigns.png"
+                            alt="gloinkdesigns logo"></a></li>
+                <li class="menu-item menu-item-selected"><a href="./service.html" class="item">Services</a></li>
+                <!-- <li class="menu-item"><a href="" class="item">Blog</a></li> -->
+                <li class="menu-item"><a href="" class="item">Waitlist</a></li>
+                <li class="menu-item"><a href="./contact.html" class="item"><button class="btn btn-nav">Lets
+                            Talk</button></a></li>
+                <li class="menu-icon-mobile"><a class="menu-icon" href="./menu.html">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </a></li>
+            </ul>
+            <img src="./images/flower-shape.png" alt="Flower" id="flower-bg" />
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="service-content">
+            <section class="service-menu">
+                <a class="service-menu-item" href="./service-branding.html">Logo & Branding</a>
+                <a class="service-menu-item" href="./service-portrait.html">Portrait Art</a>
+                <a class="service-menu-item" href="./service-bookcover.html">Book Covers</a>
+                <a class="service-menu-item" href="">Character Art</a>
+                <a class="service-menu-item" href="">Book Inside Art & Formating</a>
+                <a class="service-menu-item" href="">PR Box & Merch</a>
+                <a class="service-menu-item" href="">Event Designs</a>
+                <a class="service-menu-item" href="">Website Design</a>
+                <a class="service-menu-item-process" href="">View Process</a>
+            </section>
+
+            <section class="service-details">
+                <div class="service-heading">
+                    <h1>SERVICES</h1>
+                </div>
+                <div class="card card-service-nodetails">
+                    <p>Select a service to view more details</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- THIS IS THE FLOWER ANIMATION ON HOVER OF MENU ITEMS -->
+    <script>
+        const flower = document.getElementById('flower-bg');
+        const navItems = document.querySelectorAll('.item');
+
+        navItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                flower.style.display = 'block';
+                flower.style.display = 'block';
+                flower.classList.add('spin');
+            });
+
+            item.addEventListener('mousemove', (e) => {
+                const rect = item.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                // Optional offsets to center the flower image
+                const offsetX = -25; // half of flower width (if 50px)
+                const offsetY = -25;
+
+                flower.style.left = `${rect.left + x + offsetX}px`;
+                flower.style.top = `${rect.top + y + offsetY}px`;
+            });
+
+            item.addEventListener('mouseleave', () => {
+                flower.style.display = 'none';
+                flower.style.display = 'none';
+                flower.classList.remove('spin');
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>

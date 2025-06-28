@@ -1,0 +1,247 @@
+/* -------------------------------- SERVICES PAGE --------------------------------*/
+
+main{
+    height: calc(100vh - 10rem); /* adjust as needed */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.service-content{
+    display: flex;
+    align-items: stretch;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+/* ---------- SERVICES SIDE MENU ----------*/
+
+.service-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 34%;
+    max-width: 332px;
+}
+
+.service-menu-item{
+    padding: 20px;
+    border-radius: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(10px);
+}
+
+.service-menu-item:hover{
+    background-color: rgba(255, 255, 255);
+    font-weight: 600;
+}
+
+.service-menu-item-selected{
+    padding: 20px;
+    border-radius: 1.5rem;
+    background-color: var(--primary-dark);
+    color: var(--white) !important;
+}
+
+.service-menu-item-process{
+    padding: 20px;
+    border-radius: 1.5rem;
+    border: 3px solid var(--primary-dark);
+}
+
+.service-menu-item-process:hover{
+    background-color: var(--white);
+    font-weight: 600;
+}
+
+/* ---------- SERVICE DETAILS SECTION ----------*/
+
+.service-details{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.service-heading{
+    position: relative;
+    margin-bottom: -44px;
+    top: -20px;
+    padding-left: 20px;
+}
+
+.back-arrow-mobile{
+    display: none;
+}
+
+.card-service-nodetails{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--grey);
+}
+
+.card-service-details{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    color: var(--grey);
+}
+
+.card-service-details h4{
+    color: var(--primary-acsent);
+    margin-bottom: 10px;
+}
+
+.card-service-details p{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.card-service-details ul{
+    list-style-type: disc;
+    margin-left: 30px;
+    color: var(--primary-dark);
+}
+
+.card-service-details li{
+    font-size: var(--text-para);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.description{
+    font-size: var(--text-sm);
+    color: var(--grey);
+    font-weight: 300;
+}
+
+/* ------- PORTRAIT ART -------*/
+
+.portrait-types{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.portrait-type-img{
+    width: 100%;
+    max-width: 144px;
+}
+
+.card-headshot{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFEFFF;
+    border: 2px solid #FF66CC;
+    border-radius: 2rem;
+    color: var(--primary-dark);
+    width: 30%;
+    padding: 10px;
+    max-height: 200px;
+}
+
+.portrait-type-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.portrait-type-caption{
+    align-self: self-start;
+}
+
+.portrait-type-heading p{
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+/* ------- BOOK COVERS -------*/
+
+.card-covertype{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFEFFF;
+    border: 2px solid #FF66CC;
+    border-radius: 2rem;
+    color: var(--primary-dark);
+    width: 48%;
+    padding: 10px;
+
+}
+
+.card-covertype > p{
+    font-weight: 700;
+    color: #FF66CC;
+    font-size: var(--text-h6);
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+.book-type-img{
+    width: 100%;
+    padding: 20px;
+}
+
+.book-type-img-gra{
+    width: 100%;
+    padding: 20px;
+    max-width: 150px;
+}
+
+.book-type-caption{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bookcover-extras{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.additional-mockup{
+    font-size: var(--text-para);
+    color: var(--primary-dark);
+    font-weight: 700 !important;
+    margin-bottom: 10px;
+}
+
+/* ------- CHARACTER ART -------*/
+
+.character-type-img{
+    width: 100%;
+    max-width: 172px;
+}
+
+.fullcharacter-type-img{
+    width: 100%;
+    max-width: 144px;
+    padding-top: 10px;
+}
+
+/* ------- PROCESS -------*/
+
+.ref-eg-img{
+    width: 100%;
+    max-width: 500px;
+
+}
+
+ol{
+    color: var(--primary-dark);
+    margin-left: 30px;
+}
+
+ol li{
+    margin-bottom: 20px !important;
+}
