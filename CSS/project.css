@@ -1,3 +1,6 @@
+main{
+  margin-bottom: 50px;
+}
 /* ------------- PORTFOLIO PAGE ------------- */
 
 /* ----- Portfolio heading & filter section ----- */
@@ -16,6 +19,25 @@
   justify-content: end;
   gap: 20px;
   align-items: center;
+  position: relative;
+}
+
+.filter-icon{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.8;
+}
+
+.filtericon{
+  width: 100%;
+  max-width: 32px;
 }
 
 select{
@@ -64,6 +86,7 @@ select option:checked {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 10px;
+  row-gap: 10px;
 }
 
 .portfolio-item:hover{

@@ -1,144 +1,176 @@
-@media (max-width: 1120px ){
-    html{
+@media (max-width: 1120px) {
+    html {
         font-size: 54%;
     }
 
-    .intro-img{
+    main {
+        min-height: 80vh;
+    }
+
+    .intro-img {
         max-width: 200px;
         width: 80%;
     }
 
-    .img-about, .img-portfolio{
+    .img-about,
+    .img-portfolio {
         max-width: 200px;
     }
 
-    .arrow-icon{
+    .arrow-icon {
         height: 28px;
     }
 
-    .card{
+    .card {
         padding: 8px;
     }
 
     /* ------------ About Page ------------ */
-    .swiper{
+    .swiper {
         padding-left: 40px;
         padding-right: 40px;
         padding-bottom: 25px;
         overflow: hidden;
     }
-
 }
 
-@media (max-width: 992px ){
-    html{
+@media (max-width: 992px) {
+    html {
         font-size: 48%;
     }
 
-    :root{
+    :root {
         --text-h4: 3rem;
         --text-md: 1.8rem;
     }
-    
-    .img-about, .img-portfolio{
+
+    main {
+        min-height: 80vh;
+    }
+
+    .img-about,
+    .img-portfolio {
         /* max-width: 150px; */
         width: 100%;
     }
 
-    .arrow-icon{
+    .arrow-icon {
         height: 24px;
     }
 
-    .intro-img{
+    .intro-img {
         max-width: 140px;
         width: 80%;
     }
 
     /* ------------ About Page ------------ */
-    .review-card-headings{
+    .review-card-headings {
         gap: 15px;
     }
 
-    .review-icon{
+    .review-icon {
         width: 110px;
     }
 
+    /* ------------ Projects Page ------------ */
+    .portfolio-heading {
+        margin-bottom: -16px;
+    }
+
+    /* ------------ Individual Project Page ------------ */
+    .heading {
+        margin-bottom: -16px;
+    }
+
+    .project-details {
+        padding: 20px 40px 20px 40px;
+    }
+
     /* ------------ Service Page ------------ */
-    .service-heading{
+    .service-heading {
         margin-bottom: -36px;
     }
 
+
     /* ------------ Contact Page ------------ */
-    .contact-section{
+    .contact-section {
         flex-direction: column;
     }
 
-    .contact-content{
+    .contact-content {
         width: 100%;
     }
 
-    .contact-heading{
+    .contact-heading {
         margin-bottom: -18px;
     }
 
-    .contact-form{
+    .contact-form {
         padding: 20px;
     }
 
-    .contact-details{
+    .contact-details {
         flex-direction: row;
         gap: 20px;
         margin-top: 0px;
     }
 
-    .card-contact, .card-social{
+    .card-contact,
+    .card-social {
         width: 50%;
         padding: 20px;
     }
 }
 
-@media (max-width: 786px ){
-    :root{
+@media (max-width: 786px) {
+    :root {
         --text-h1: 7.2rem;
         --text-h3: 2.5rem;
-        --text-h4: 2rem;
+        --text-h4: 2.8rem;
         --text-h5: 1.9rem;
     }
 
-    header{
+    main {
+        min-height: 80vh;
+    }
+
+    header {
         margin-bottom: 3rem;
     }
 
-    .nav-logo{
+    .card {
+        padding: 10px 20px;
+    }
+
+    .nav-logo {
         max-width: 60px;
     }
 
-    .menu-item{
+    .menu-item {
         display: none;
     }
 
-    .menu-icon-mobile{
+    .menu-icon-mobile {
         display: block;
     }
 
-
-    .intro-section{
+    .intro-section {
         flex-direction: column;
     }
 
-    .card-intro{
+    .card-intro {
         width: 100%;
     }
 
-    .intro-right{
+    .intro-right {
         flex-direction: row-reverse;
     }
 
-    .card-waitlist{
+    .card-waitlist {
         flex-direction: column;
     }
 
-    .card-waitlist p{
+    .card-waitlist p {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -147,295 +179,449 @@
         text-align: center;
     }
 
-    .img-about, .img-portfolio{
+    .img-about,
+    .img-portfolio {
         max-width: none;
         width: 100%;
     }
 
-    .service-section{
+    .service-section {
         flex-direction: column;
     }
 
-    .card-services{
+    .card-services {
         width: 100%;
     }
 
-    .view-all-services{
+    .view-all-services {
         display: none;
     }
 
-    .view-all-services-mobile{
+    .view-all-services-mobile {
         display: flex;
     }
 
-    .services{
+    .services {
+        display: flex;
         gap: 6px;
-        overflow: scroll;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
-    .service-icons{
+    .service-icons {
         max-width: none;
         width: 100%;
         display: grid;
     }
 
-    .intro-service01, .intro-service02, .intro-service03, .intro-service04, .intro-service05{
+    .intro-service01,
+    .intro-service02,
+    .intro-service03,
+    .intro-service04,
+    .intro-service05 {
         min-width: 92px;
     }
 
-    .card-socials{
+    .card-socials {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         width: 100%;
     }
 
-    .social-icons-group{
-        gap:20px
+    .social-icons-group {
+        gap: 20px
     }
 
-    .cta-left{
-        gap:6px
+    .card-exp,
+    .card-clients,
+    .card-project {
+        padding: 10px;
+    }
+
+    .cta-left {
+        gap: 6px
     }
 
     /* ------------ About Page ------------ */
 
-    .about-heading{
+    .about-heading {
         margin-bottom: -14px;
     }
 
-    .about-me-photo{
-        top: 0px;
+    .about-me-photo {
+        top: -30px;
     }
 
-    .card-software, .card-resume{
+    .card-software,
+    .card-resume {
         flex-direction: column;
         align-items: start;
         gap: 10px;
     }
 
-    .swiper{
+    .swiper {
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 10px;
     }
 
-    .review-icon{
+    .review-icon {
         width: 80px;
     }
 
-    .review-card-headings{
+    .review-card-headings {
         gap: 10px;
     }
 
-    .review-card-content p{
+    .review-card-content p {
         font-size: 1.8rem;
     }
 
-    .review-card-headings{
+    .review-card-headings {
         grid-column: 1/4;
         grid-row: 1/2;
     }
 
-    .review-img{
+    .review-img {
         grid-column: 3/4;
         grid-row: 2/3;
     }
 
-    .review-client-details p:first-child{
+    .review-client-details p:first-child {
         font-size: 1.6rem;
         font-weight: 700;
         color: var(--primary-dark);
         margin-bottom: 4px;
     }
 
-    .swiper-button-next, .swiper-button-prev{
+    .swiper-button-next,
+    .swiper-button-prev {
         display: none;
     }
 
-        /* ------------ Service Page ------------ */
-        .service-menu{
-            display: none;
-        }
-    
-        .service-details{
-            width: 100%;
-        }
-    
-        .service-heading{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-left: 0px;
-            padding-right: 10px;
-            margin-bottom: -20px;
-        }
-    
-        .back-arrow-mobile{
-            display: block;
-            max-width: 52px;
-            width: 100%;
-        }
-    
-        .card-service-details{
-            padding: 20px;
-        }
-    
-        .portrait-types{
-            width: 100%;
-            gap: 10px;
-            overflow: scroll;
-        }
-    
-        .card-headshot{
-            min-width: 150px;
-            max-height: none;
-            justify-content: start;
-            gap: 4px;
-        }
+    /* ------------ Projects Page ------------ */
+    .portfolio-heading {
+        margin-bottom: -12px;
+    }
 
-        .book-type-img-gra{
-            max-width: 110px;
-        }
+    .filter-icon {
+        display: block;
+    }
+
+    select {
+        padding-left: 30px;
+        width: 44px;
+        color: transparent;
+        direction: rtl;
+        text-align: left;
+    }
+
+    select option {
+        color: var(--primary-dark);
+        padding: 20px;
+    }
+
+    .portfolio-item {
+        align-self: stretch;
+    }
+
+    .card-portfolio {
+        height: 100%;
+    }
+
+    /* ------------ Individual Project Page ------------ */
+    .heading {
+        margin-bottom: -12px;
+    }
+
+    .banner-parallax {
+        height: 20vh;
+    }
+
+
+    .project-title {
+        font-size: 24px;
+    }
+
+    .project-details {
+        padding: 10px 20px 10px 20px;
+    }
+
+    /* ------------ Service Page ------------ */
+    .service-menu {
+        display: none;
+    }
+
+    .service-details {
+        width: 100%;
+    }
+
+    .service-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0px;
+        padding-right: 10px;
+        margin-bottom: -20px;
+    }
+
+    .back-arrow-mobile {
+        display: block;
+        max-width: 52px;
+        width: 100%;
+    }
+
+    .card-service-details {
+        padding: 8px;
+    }
+
+    .service-types {
+        width: 100%;
+        gap: 10px;
+        overflow: scroll;
+    }
+
+    .card-headshot {
+        min-width: 150px;
+        max-height: none;
+        justify-content: start;
+        gap: 4px;
+    }
+
+    .book-type-img-gra {
+        max-width: 110px;
+    }
+
+    .prbox-pricing-cards {
+        flex-direction: column;
+    }
+
+    .prbox-pricing-cards .price-img {
+        width: 100%;
+    }
+
 
     /* ------------ Contact Page ------------ */
 
-    .card-contact, .card-social{
+    .card-contact,
+    .card-social {
         width: 50%;
         padding: 20px;
     }
-    
-    
+
+    /* ------------ Resume Page ------------ */
+    .resume-bg {
+        padding: 5%;
+    }
+
+    .resume-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .resume-grid .about-card {
+        flex-direction: row;
+    }
+
+    .about-card-details {
+        align-items: start;
+        text-align: left;
+        justify-content: space-between;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .about-details h6 {
+        font-size: 24px;
+    }
+
+    .about-card {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .resume-about-img {
+        width: 40%;
+        height: auto;
+        max-width: 150px;
+        flex-shrink: 0;
+        object-fit: contain;
+    }
 }
 
-@media (max-width: 482px ){
-    :root{
+@media (max-width: 482px) {
+    :root {
         --text-h1: 5.4rem;
         --text-h3: 2.8rem;
         --text-h4: 2.5rem;
         --text-h5: 1.8rem
     }
 
-    .intro-right{
+    main {
+        min-height: 80vh;
+    }
+
+    .intro-right {
         flex-direction: column;
     }
 
-    .card-waitlist{
+    .card-waitlist {
         flex-direction: row;
     }
 
-    .card-waitlist p, .card-waitlist .btn{
+    .card-waitlist p,
+    .card-waitlist .btn {
         text-align: left;
     }
 
-    .cta-section{
+    .cta-section {
         flex-direction: column;
     }
 
-    .cta-left, .card-cta{
+    .cta-left,
+    .card-cta {
         width: 100%;
     }
 
-    .arrow-icon{
+    .arrow-icon {
         height: 20px;
     }
 
-    .card-cta{
+    .card-cta {
         padding: 20px;
     }
 
-    .card-exp, .card-client, .card-projects{
+    .card-exp,
+    .card-client,
+    .card-projects {
         height: 100px
     }
 
-    .card-socials{
+    .card-socials {
         padding: 10px 20px;
     }
 
-    .social-icon{
+    .social-icon {
         width: 32px;
     }
 
-    .social-icons-group{
+    .social-icons-group {
         gap: 6px;
+    }
+
+    .social-profiles {
+        display: none;
+    }
+
+    .intro-img,
+    .img-about,
+    .img-portfolio {
+        height: auto;
     }
 
     /* ------------ About Page ------------ */
 
-    .about-me-intro-card{
+    .about-heading {
+        margin-bottom: -10px;
+    }
+
+    .about-me-intro-card {
         grid-template-rows: 62px auto;
     }
 
-    .about-me-photo{
+    .about-me-photo {
         padding: 4px 4px 16px 4px;
-        top: -40px;
+        top: -50px;
         grid-row: 1/2;
     }
 
-    .about-me-content{
+    .waitlist-button .arrow-icon {
+        display: none;
+    }
+
+    .card-aboutme,
+    .card-portfolio,
+    .card-waitlist,
+    .card-services {
+        padding: 10px;
+    }
+
+    .card-waitlist {
+        padding-left: 20px;
+    }
+
+    .about-me-content {
         grid-column: 1/4;
         padding-left: 20px;
         margin-bottom: 10px;
     }
 
-    .skill-section{
+    .skill-section {
         flex-direction: column;
         justify-content: space-between;
         gap: 10px;
     }
 
-    .card-software, .card-resume{
+    .card-software,
+    .card-resume {
         width: 100%;
         flex-direction: row;
         align-items: center;
     }
 
-    .software-icons{
+    .software-icons {
         gap: 4px;
     }
 
-    .software-icon{
+    .software-icon {
         max-width: 32px;
     }
 
-    .review-card{
+    .review-card {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         row-gap: 10px;
         padding-bottom: 10px;
     }
 
-    .review-card-headings{
+    .review-card-headings {
         grid-column: 1/5;
     }
 
-    .review-card-content{
+    .review-icon {
+        width: 60px;
+        top: 0px;
+    }
+
+    .review-card-content {
         grid-column: 1/5;
         grid-row: 2;
         min-height: 150px;
         padding: 20px;
     }
 
-    .review-card-content p{
+    .review-card-content p {
         line-height: 172%;
     }
 
-    .quotes-img{
+    .quotes-img {
         width: 80px;
         right: 10px;
         bottom: 5px;
     }
 
-    .review-img{
+    .review-img {
         grid-row: 3;
         grid-column: 3/5;
         justify-self: end;
     }
 
-    .review-project-img{
+    .review-project-img {
         max-width: 142px;
     }
 
-    .review-client{
+    .review-client {
         grid-row: 3;
         grid-column: 1/3;
         align-items: center;
@@ -443,70 +629,168 @@
         padding-left: 10px;
     }
 
-    .client-photo{
+    .client-photo {
         max-width: 52px;
     }
 
+    /* ------------ Portfolio Page ------------ */
+    .portfolio-heading {
+        margin-bottom: 0px;
+    }
+
+    .portfolio-head {
+        margin-bottom: 10px;
+    }
+
+    select {
+        padding-left: 10px;
+        background-image: none;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+    }
+
+    /* ------------ Individual Project Page ------------ */
+    .title_software {
+        flex-direction: column;
+    }
+
+    .software-used img {
+        max-width: 24px;
+    }
+
+    .brief {
+        flex-direction: column;
+    }
+
+    .basic-details {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .brief-detail {
+        width: 100%;
+    }
+
+    .project-title {
+        font-size: 24px;
+    }
+
+    .project-details {
+        padding: 10px 20px 10px 20px;
+    }
+
+    .review-card-content .review-client {
+        justify-content: start;
+    }
+
+
+
     /* ------------ Service Page ------------ */
-    .portrait-types{
+    .service-types {
         flex-direction: column;
         width: 100%;
     }
 
-    .card-headshot{
+    .card-headshot {
         width: 100%;
     }
 
-    .card-covertype{
+    .card-covertype {
         width: 100%;
     }
 
-    .book-type-img-gra{
+    .book-type-img-gra {
         max-width: 150px;
     }
 
     /* ------------ Contact page ------------ */
 
-    .contact-heading{
+    .contact-heading {
         margin-bottom: -10px;
     }
 
-    .form-usertype, .form-username, .form-ighandle, .form-email{
+    .form-usertype,
+    .form-username,
+    .form-ighandle,
+    .form-email {
         flex-direction: column;
         gap: 10px;
         align-items: start;
     }
 
-    .radio-btn{
+    .radio-btn {
         font-size: 12px;
     }
 
-    input[type="text"], input[type="email"]{
-        font-size: 12px;;
+    input[type="text"],
+    input[type="email"] {
+        font-size: 12px;
+        ;
     }
 
-    .contact-details{
+    .contact-details {
         flex-direction: column;
     }
 
-    .card-contact, .card-social{
+    .card-contact,
+    .card-social {
         width: 100%;
     }
 
+    /* ------------ Resume Page ------------ */
+
+    .about-details h6 {
+        font-size: 18px;
+    }
+
+    .resumebg {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .about-card {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .about-card-details {
+        gap: 10px;
+    }
+
+    .resume-head-section {
+        margin-bottom: -20px;
+    }
+
+    .resume-about-img {
+        width: 44%;
+        max-width: 180px;
+    }
+
+    .resume-card {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .personal-info-details {
+        padding: 10px 20px 0px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .software-info-details {
+        padding: 10px 20px 0px;
+        gap: 5px;
+    }
+
+    .exp-info-details,
+    .edu-info-details {
+        padding: 20px 20px 10px;
+        gap: 5px;
+    }
 
 
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -6,7 +6,7 @@ main{
     align-items: center;
     gap: 1.5rem;
     margin-top: 2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 /* ---------- ABOUT ME INTRO SECTION ----------*/
@@ -21,7 +21,7 @@ main{
 .about-me-intro-card{
     display: grid;
     grid-template-columns: 1.5fr 2fr 2fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 0.7fr;
     column-gap: 5%;
     row-gap: 10px;
 }
@@ -31,7 +31,7 @@ main{
     background-color: var(--white);
     position: relative;
     top: -50px;
-    transform: rotate(-15deg);
+    transform: rotate(-10deg);
     width: fit-content;
     grid-row: 1/ span 2;
     width: 100%;
