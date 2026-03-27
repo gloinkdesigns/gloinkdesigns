@@ -4,7 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gloinkdesigns</title>
+    <title>Gloinkdesigns Portfolio | Projects done by Athira Jayachandran</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Athira Jayachandran (gloinkdesigns) – Portfolio of portraits, book covers, and branding designs.">
+    <meta name="keywords"
+        content="Portfolio, Graphic Designer, Digital Artist, Book Illustrator, Branding, Portraits, Freelance Design, Logo Design, Book Cover">
+    <meta name="author" content="Athira Jayachandran">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Athira Jayachandran |Portfolio of Gloinkdesings ">
+    <meta property="og:description"
+        content="Portfolio of design works by Freelance Designer Athira Jayachandran (gloinkdeisgns)">
+    <meta property="og:image" content="https://gloinkdesigns.com/images/portfolio-sample.png">
+    <meta property="og:url" content="https://gloinkdesigns.com/portfolio.html">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://gloinkdesigns.com/portfolio.html">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="./images/logo/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- PNG favicons-->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/logo/favicon/gloinkdesigns-favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo/favicon/gloinkdesigns-favicon-32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./images/logo/favicon/gloinkdesigns-favicon-48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/logo/favicon/gloinkdesigns-favicon-96.png">
+
+    <!-- Apple Touch Icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/logo/favicon/apple-touch-icon.png">
+
+    <!-- Android/Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/logo/favicon/gloinkdesigns-favicon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./images/logo/favicon/gloinkdesigns-favicon-512.png">
+
+    <meta name="theme-color" content="#e4d3ff">
 
     <!-- Linking CSS -->
     <link rel="stylesheet" href="./CSS/global.css">
@@ -20,7 +55,7 @@
                 <li class="menu-item"><a href="./index.html" class="item">Home</a>
                 </li>
                 <li class="menu-item"><a href="./about.html" class="item">About</a></li>
-                <li class="menu-item-selected"><a href="./portfolio.html" class="item">Projects</a></li>
+                <li class="menu-item menu-item-selected"><a href="./portfolio.html" class="item">Projects</a></li>
                 <li><a href=""><img class="nav-logo" src="./images/logo/logo-light-gloinkdesigns.png"
                             alt="gloinkdesigns logo"></a></li>
                 <li class="menu-item"><a href="./service.html" class="item">Services</a></li>
@@ -34,7 +69,7 @@
                         <div></div>
                     </a></li>
             </ul>
-            <img src="./images/flower-shape.png" alt="Flower" id="flower-bg" />
+            <img src="./images/flower-shape.png" alt="Flower Shape" id="flower-bg" />
         </nav>
     </header>
 
@@ -44,38 +79,160 @@
             <div class="portfolio-head">
                 <h1 class="portfolio-heading">PORTFOLIO</h1>
                 <div class="portfolio-filters">
+                    <span class="filter-icon">
+                        <img class="filtericon" src="./images/icons/icon-filter.png" alt="Filter Icon" />
+                    </span>
                     <select name="portfolio-filter" id="portfolio-filter">
                         <option value="all">All Projects</option>
                         <option value="portrait">Portraits</option>
                         <option value="books">Books & Characters</option>
                         <option value="brand">Logo & Branding</option>
-                        <option value="web">Web Design</option>
-                    </select>
-                    <select name="portfolio-sort" id="portfolio-sort">
-                        <option value="all">Newest First</option>
-                        <option value="portrait">Oldest First</option>
+                        <option value="pr">PR & Merch</option>
+                        <!-- <option value="web">Web Design</option> -->
+                        <hr>
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
                     </select>
                 </div>
             </div>
             <div class="portfolio-grid">
                 <a class="portfolio-item" href="project.html?id=coffeepeople">
-                    <div class="card-portfolio" data-category="books" data-date="2025-06-06">
-                        <img class="project-cover" src="./images/projects/bookcovers/coffeepeople/cover.png" alt="">
+                    <div class="card-portfolio" data-category="books" data-date="2024-06-06">
+                        <img class="project-cover" src="./images/projects/bookcovers/coffeepeople/cover.png"
+                            alt="Coffee People Book cover design done by gloinkdesigns">
                         <h6>Coffee People</h6>
                         <p>Book Cover</p>
                     </div>
                 </a>
-                <a class="portfolio-item" href="project.html?id=coffeepeople">
-                    <div class="card-portfolio" data-category="books" data-date="2025-06-06">
-                        <img class="project-cover" src="./images/projects/bookcovers/coffeepeople/cover.png" alt="">
-                        <h6>Coffee People</h6>
+                <a class="portfolio-item" href="project.html?id=rebelromance">
+                    <div class="card-portfolio" data-category="brand" data-date="2025-08-16">
+                        <img class="project-cover" src="./images/projects/branding/rebelromance/cover.png"
+                            alt="Rebel Romance Bookstore Logo & Branding design done by gloinkdesigns">
+                        <h6>Rebel Romance Bookstore</h6>
+                        <p>Logo & Branding</p>
+                    </div>
+                </a>
+                <a class="portfolio-item" href="project.html?id=lissmontoya">
+                    <div class="card-portfolio" data-category="brand" data-date="2025-02-06">
+                        <img class="project-cover" src="./images/projects/branding/lissmontoya/cover.jpg"
+                            alt="Author Liss Montoya brand design done by gloinkdesigns">
+                        <h6>Liss Montoya</h6>
+                        <p>Logo & Branding</p>
+                    </div>
+                </a>
+                <a class="portfolio-item" href="project.html?id=nailedbykaitlin">
+                    <div class="card-portfolio" data-category="brand portrait" data-date="2025-03-15">
+                        <img class="project-cover" src="./images/projects/branding/nailedbykaitlin/cover.jpg"
+                            alt="Nail art logo & brand design done by gloinkdesigns">
+                        <h6>Nailed by Kaitlin</h6>
+                        <p>Logo & Branding</p>
+                    </div>
+                </a>
+                <a class="portfolio-item" href="project.html?id=bibliobarbie">
+                    <div class="card-portfolio" data-category="brand" data-date="2025-05-06">
+                        <img class="project-cover" src="./images/projects/branding/bibliobarbie/cover.jpg"
+                            alt="Biblio Barbie bradn designs done by gloinkdesings">
+                        <h6>Biblio Barbie</h6>
+                        <p>Logo & Branding</p>
+                    </div>
+                </a>
+                <a class="portfolio-item" href="project.html?id=ashleyclairebrand">
+                    <div class="card-portfolio" data-category="brand" data-date="2025-07-17">
+                        <img class="project-cover" src="./images/projects/branding/ashleyclaire/cover.jpg"
+                            alt="Author Ashley Claire brand design done by gloinkdesigns">
+                        <h6>Author Ashley Claire</h6>
+                        <p>Logo & Branding</p>
+                    </div>
+                </a>
+                <a class="portfolio-item" href="project.html?id=italianbreak">
+                    <div class="card-portfolio" data-category="books" data-date="2023-12-06">
+                        <img class="project-cover" src="./images/projects/bookcovers/theitalianbreak/cover.png"
+                            alt="The Italian Break Book cover design done by gloinkdesigns">
+                        <h6>The Italian Break</h6>
                         <p>Book Cover</p>
                     </div>
                 </a>
-
+                <a class="portfolio-item" href="./project-portraits22.html">
+                    <div class="card-portfolio" data-category="portrait" data-date="2022-12-01">
+                        <img class="project-cover" src="./images/projects/portraits/2022/cover.png"
+                            alt="all portrait art done in 2022 by gloinkdesigns">
+                        <h6>Portraits 2022</h6>
+                        <p>Profile Picture Art</p>
+                    </div>
+                </a>
+                <a class="portfolio-item" href="project.html?id=withthisring">
+                    <div class="card-portfolio" data-category="books" data-date="2023-12-06">
+                        <img class="project-cover" src="./images/projects/bookcovers/withthisring/cover.jpg"
+                            alt="With this ring book cover design done by gloinkdesigns">
+                        <h6>With this Ring</h6>
+                        <p>Book Cover</p>
+                    </div>
+                </a>
+                <a class="portfolio-item" href="project.html?id=sinistersets">
+                    <div class="card-portfolio" data-category="brand" data-date="2023-12-06">
+                        <img class="project-cover" src="./images/projects/branding/sinistersets/cover.jpg"
+                            alt="With this ring book cover design done by gloinkdesigns">
+                        <h6>Sinister Sets</h6>
+                        <p>Logo & Branding</p>
+                    </div>
+                </a>
             </div>
         </section>
     </main>
+
+    <!-- BOTTOM DETAILS -->
+    <footer class="bottom-details-section">
+        <p>Art & Design</p>
+        <p>CC 2025 @gloinkdesigns</p>
+    </footer>
+
+    <!------------------------ JS CODE ------------------------>
+
+    <!-- FILTERING PROJECTS -->
+    <script>
+        const select = document.getElementById("portfolio-filter");
+        const portfolioGrid = document.querySelector(".portfolio-grid");
+        const allCards = Array.from(portfolioGrid.querySelectorAll(".card-portfolio"));
+
+        function updateProjects() {
+            const selectedValue = select.value;
+            let filteredCards = [...allCards];
+
+            // Filter by category (supports multiple categories)
+            if (
+                selectedValue !== "all" &&
+                selectedValue !== "newest" &&
+                selectedValue !== "oldest"
+            ) {
+                filteredCards = allCards.filter(card =>
+                    card.dataset.category.split(" ").includes(selectedValue)
+                );
+            }
+
+            // Sort by date
+            if (selectedValue === "newest") {
+                filteredCards.sort((a, b) =>
+                    new Date(b.dataset.date) - new Date(a.dataset.date)
+                );
+            } else if (selectedValue === "oldest") {
+                filteredCards.sort((a, b) =>
+                    new Date(a.dataset.date) - new Date(b.dataset.date)
+                );
+            }
+
+            // Update the DOM
+            portfolioGrid.innerHTML = "";
+            filteredCards.forEach(card => {
+                portfolioGrid.appendChild(card.parentElement); // .portfolio-item (the <a>)
+            });
+        }
+
+        select.addEventListener("change", updateProjects);
+        updateProjects();
+    </script>
+
+    <!-- THIS IS THE FLOWER ANIMATION ON HOVER OF MENU ITEMS -->
+    <script src="./flower-animation.js"></script>
 
 </body>
 

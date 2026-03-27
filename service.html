@@ -4,10 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Gloinkdesigns</title>
+    <title> Gloinkdesigns Services - Art & Design by Athira Jayachandran</title>
 
-    <!-- Linking Swiper CSS  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Athira Jayachandran (gloinkdesigns) – portraits, book covers, and branding designs services.">
+    <meta name="keywords"
+        content="Design Services, Author services, Graphic Designer, Digital Artist, Book Illustrator, Branding, Portraits, Freelance Design, Logo Design, Book Cover">
+    <meta name="author" content="Athira Jayachandran">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Athira Jayachandran | Art & Design services by Gloinkdesigns">
+    <meta property="og:description"
+        content="Portfolio of design works by Freelance Designer Athira Jayachandran (gloinkdesigns)">
+    <meta property="og:image" content="https://gloinkdesigns.com/images/portfolio-sample.png">
+    <meta property="og:url" content="https://gloinkdesigns.com/service.html">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://gloinkdesigns.com/service.html">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="./images/logo/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- PNG favicons-->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/logo/favicon/gloinkdesigns-favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo/favicon/gloinkdesigns-favicon-32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./images/logo/favicon/gloinkdesigns-favicon-48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/logo/favicon/gloinkdesigns-favicon-96.png">
+
+    <!-- Apple Touch Icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/logo/favicon/apple-touch-icon.png">
+
+    <!-- Android/Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/logo/favicon/gloinkdesigns-favicon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./images/logo/favicon/gloinkdesigns-favicon-512.png">
+
+    <meta name="theme-color" content="#e4d3ff">
 
     <!-- Linking CSS -->
     <link rel="stylesheet" href="./CSS/global.css">
@@ -24,11 +56,11 @@
                 </li>
                 <li class="menu-item"><a href="./about.html" class="item">About</a></li>
                 <li class="menu-item"><a href="./portfolio.html" class="item">Projects</a></li>
-                <li><a href=""><img class="nav-logo" src="./images/logo/logo-light-gloinkdesigns.png"
+                <li><a href="./index.html"><img class="nav-logo" src="./images/logo/logo-light-gloinkdesigns.png"
                             alt="gloinkdesigns logo"></a></li>
                 <li class="menu-item menu-item-selected"><a href="./service.html" class="item">Services</a></li>
                 <!-- <li class="menu-item"><a href="" class="item">Blog</a></li> -->
-                <li class="menu-item"><a href="" class="item">Waitlist</a></li>
+                <li class="menu-item"><a href="https://gloinkdesigns-waitlist.carrd.co/" class="item">Waitlist</a></li>
                 <li class="menu-item"><a href="./contact.html" class="item"><button class="btn btn-nav">Lets
                             Talk</button></a></li>
                 <li class="menu-icon-mobile"><a class="menu-icon" href="./menu.html">
@@ -37,22 +69,26 @@
                         <div></div>
                     </a></li>
             </ul>
-            <img src="./images/flower-shape.png" alt="Flower" id="flower-bg" />
+            <img src="./images/flower-shape.png" alt="Flower Shape" id="flower-bg" />
         </nav>
     </header>
 
     <main class="container">
         <div class="service-content">
             <section class="service-menu">
-                <a class="service-menu-item" href="./service-branding.html">Logo & Branding</a>
                 <a class="service-menu-item" href="./service-portrait.html">Portrait Art</a>
+                <hr>
                 <a class="service-menu-item" href="./service-bookcover.html">Book Covers</a>
-                <a class="service-menu-item" href="">Character Art</a>
-                <a class="service-menu-item" href="">Book Inside Art & Formating</a>
-                <a class="service-menu-item" href="">PR Box & Merch</a>
-                <a class="service-menu-item" href="">Event Designs</a>
-                <a class="service-menu-item" href="">Website Design</a>
-                <a class="service-menu-item-process" href="">View Process</a>
+                <a class="service-menu-item" href="./service-formating.html">Formatting & Interior Art</a>
+                <a class="service-menu-item" href="./service-character.html">Character Art</a>
+                <a class="service-menu-item" href="./service-prbox.html">PR Box & Merch</a>
+                <hr>
+                <a class="service-menu-item" href="./service-branding.html">Logo & Branding</a>
+                <a class="service-menu-item" href="./service-event.html">Event Designs</a>
+                <a class="service-menu-item" href="./service-graphics.html">Social Graphics</a>
+                <a class="service-menu-item" href="./service-website.html">Website Design</a>
+                <hr>
+                <a class="service-menu-item-process" href="./service-process.html">View Process</a>
             </section>
 
             <section class="service-details">
@@ -66,40 +102,16 @@
         </div>
     </main>
 
+    <!-- BOTTOM DETAILS -->
+    <footer class="bottom-details-section">
+        <p>Art & Design</p>
+        <p>CC 2025 @gloinkdesigns</p>
+    </footer>
+
+    <!------------------------ JS CODE ------------------------>
+
     <!-- THIS IS THE FLOWER ANIMATION ON HOVER OF MENU ITEMS -->
-    <script>
-        const flower = document.getElementById('flower-bg');
-        const navItems = document.querySelectorAll('.item');
-
-        navItems.forEach(item => {
-            item.addEventListener('mouseenter', () => {
-                flower.style.display = 'block';
-                flower.style.display = 'block';
-                flower.classList.add('spin');
-            });
-
-            item.addEventListener('mousemove', (e) => {
-                const rect = item.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-
-                // Optional offsets to center the flower image
-                const offsetX = -25; // half of flower width (if 50px)
-                const offsetY = -25;
-
-                flower.style.left = `${rect.left + x + offsetX}px`;
-                flower.style.top = `${rect.top + y + offsetY}px`;
-            });
-
-            item.addEventListener('mouseleave', () => {
-                flower.style.display = 'none';
-                flower.style.display = 'none';
-                flower.classList.remove('spin');
-            });
-        });
-
-
-    </script>
+    <script src="./flower-animation.js"></script>
 
 </body>
 

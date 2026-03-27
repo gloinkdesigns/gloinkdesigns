@@ -28,7 +28,7 @@
                             alt="gloinkdesigns logo"></a></li>
                 <li class="menu-item menu-item-selected"><a href="./service.html" class="item">Services</a></li>
                 <!-- <li class="menu-item"><a href="" class="item">Blog</a></li> -->
-                <li class="menu-item"><a href="" class="item">Waitlist</a></li>
+                <li class="menu-item"><a href="https://gloinkdesigns-waitlist.carrd.co/" class="item">Waitlist</a></li>
                 <li class="menu-item"><a href="./contact.html" class="item"><button class="btn btn-nav">Lets
                             Talk</button></a></li>
                 <li class="menu-icon-mobile"><a class="menu-icon" href="./menu.html">
@@ -44,15 +44,19 @@
     <main class="container">
         <div class="service-content">
             <section class="service-menu">
-                <a class="service-menu-item-selected" href="">Logo & Branding</a>
                 <a class="service-menu-item" href="./service-portrait.html">Portrait Art</a>
+                <hr>
                 <a class="service-menu-item" href="./service-bookcover.html">Book Covers</a>
+                <a class="service-menu-item" href="./service-formating.html">Formatting & Interior Art</a>
                 <a class="service-menu-item" href="./service-character.html">Character Art</a>
-                <a class="service-menu-item" href="./service-formating.html">Book Inside Art & Formating</a>
                 <a class="service-menu-item" href="./service-prbox.html">PR Box & Merch</a>
+                <hr>
+                <a class="service-menu-item-selected" href="./service-branding.html">Logo & Branding</a>
                 <a class="service-menu-item" href="./service-event.html">Event Designs</a>
-                <!-- <a class="service-menu-item" href="">Website Design</a> -->
-                <a class="service-menu-item-process" href="">View Process</a>
+                <a class="service-menu-item" href="./service-graphics.html">Social Graphics</a>
+                <a class="service-menu-item" href="./service-website.html">Website Design</a>
+                <hr>
+                <a class="service-menu-item-process" href="./service-process.html">View Process</a>
             </section>
 
             <section class="service-details">
@@ -62,82 +66,24 @@
                     <h1>SERVICES</h1>
                 </div>
                 <div class="card card-service-details">
-                    <h4>Logo & Branding Design</h4>
-                    <p>Make yourself or your brand elevate and stand out with a logo and branding designed especially
-                        for you.</p>
-
-                    <ul>
-                        <li>Logo Design <br>
-                            <span class="description">includes 3 initial concepts, Primary & Secondary logo, Brand Mark,
-                                Brand Pattern</span>
-                        </li>
-                        <li> Brand Guidelines <br>
-                            <span class="description">a PDF on the brand identity, colour scheme, typography styles and
-                                logo mockups etc</span>
-                        </li>
-                        <li> Business Card <br>
-                            <span class="description">helps to share your contact with target people & increase
-                                connections</span>
-                        </li>
-                        <li> Letterhead & Envelope <br>
-                            <span class="description">essential for any legal or official business purposes</span>
-                        </li>
-                        <li> Merch <br>
-                            <span class="description">includes stickers, bookmarks, mugs, caps, tshirts or any other
-                                merchandise designs</span>
-                        </li>
-                        <li> Labels & Packaging <br>
-                            <span class="description">attract more customers with visually appealing, functional &
-                                user-friendly packaging</span>
-                        </li>
-                        <li> Social Media <br>
-                            <span class="description">Highlight icons, Post & Story Templates, Custom Emojis </span>
-                        </li>
-                        <li> Website <br>
-                            <span class="description">Custom website design, making it more easier to find you and your
-                                business. </span>
-                        </li>
-                    </ul>
-
+                    <img class="price-img" src="./images/pricing/gloinkdesigns_pricing_branding.jpg"
+                        alt="Logo and Branding Design Pricing by Gloink Designs. Typography Logo Suite for $299: includes primary logo, secondary logo, brand mark, color palette, and commercial rights. Add-ons include: Brand Style Sheet Doc for $80, Icons and Brand Pattern for $99, Social Templates (9 posts and 2 story backgrounds) for $180, and Business Card design for $40.">
                 </div>
             </section>
         </div>
     </main>
 
+    <!-- BOTTOM DETAILS -->
+    <footer class="bottom-details-section">
+        <p>Art & Design</p>
+        <p>CC 2025 @gloinkdesigns</p>
+    </footer>
+
+    <!------------------------ JS CODE ------------------------>
+
+
     <!-- THIS IS THE FLOWER ANIMATION ON HOVER OF MENU ITEMS -->
-    <script>
-        const flower = document.getElementById('flower-bg');
-        const navItems = document.querySelectorAll('.item');
-
-        navItems.forEach(item => {
-            item.addEventListener('mouseenter', () => {
-                flower.style.display = 'block';
-                flower.style.display = 'block';
-                flower.classList.add('spin');
-            });
-
-            item.addEventListener('mousemove', (e) => {
-                const rect = item.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-
-                // Optional offsets to center the flower image
-                const offsetX = -25; // half of flower width (if 50px)
-                const offsetY = -25;
-
-                flower.style.left = `${rect.left + x + offsetX}px`;
-                flower.style.top = `${rect.top + y + offsetY}px`;
-            });
-
-            item.addEventListener('mouseleave', () => {
-                flower.style.display = 'none';
-                flower.style.display = 'none';
-                flower.classList.remove('spin');
-            });
-        });
-
-
-    </script>
+    <script src="./flower-animation.js"></script>
 
 </body>
 

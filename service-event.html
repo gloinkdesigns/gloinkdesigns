@@ -28,7 +28,7 @@
                             alt="gloinkdesigns logo"></a></li>
                 <li class="menu-item menu-item-selected"><a href="./service.html" class="item">Services</a></li>
                 <!-- <li class="menu-item"><a href="" class="item">Blog</a></li> -->
-                <li class="menu-item"><a href="" class="item">Waitlist</a></li>
+                <li class="menu-item"><a href="https://gloinkdesigns-waitlist.carrd.co/" class="item">Waitlist</a></li>
                 <li class="menu-item"><a href="./contact.html" class="item"><button class="btn btn-nav">Lets
                             Talk</button></a></li>
                 <li class="menu-icon-mobile"><a class="menu-icon" href="./menu.html">
@@ -44,15 +44,19 @@
     <main class="container">
         <div class="service-content">
             <section class="service-menu">
-                <a class="service-menu-item" href="./service-branding.html">Logo & Branding</a>
                 <a class="service-menu-item" href="./service-portrait.html">Portrait Art</a>
+                <hr>
                 <a class="service-menu-item" href="./service-bookcover.html">Book Covers</a>
+                <a class="service-menu-item" href="./service-formating.html">Formatting & Interior Art</a>
                 <a class="service-menu-item" href="./service-character.html">Character Art</a>
-                <a class="service-menu-item" href="./service-formating.html">Book Inside Art & Formating</a>
                 <a class="service-menu-item" href="./service-prbox.html">PR Box & Merch</a>
-                <a class="service-menu-item-selected" href="">Event Designs</a>
-                <!-- <a class="service-menu-item" href="">Website Design</a> -->
-                <a class="service-menu-item-process" href="">View Process</a>
+                <hr>
+                <a class="service-menu-item" href="./service-branding.html">Logo & Branding</a>
+                <a class="service-menu-item-selected" href="./service-event.html">Event Designs</a>
+                <a class="service-menu-item" href="./service-graphics.html">Social Graphics</a>
+                <a class="service-menu-item" href="./service-website.html">Website Design</a>
+                <hr>
+                <a class="service-menu-item-process" href="./service-process.html">View Process</a>
             </section>
 
             <section class="service-details">
@@ -63,55 +67,74 @@
                     <h1>SERVICES</h1>
                 </div>
                 <div class="card card-service-details">
-                    <h4>Event Designs</h4>
-                    <p> Let work together to make your events more memorable.</p>
-                    <ul>
-                        <li>Invites</li>
-                        <li>Banners/ Backgrops</li>
-                        <li>Standees</li>
-                        <li>Return gift art</li>
-                        <li>Any other designs as per requirment</li>
-                    </ul>
+                    <img class="price-img" src="./images/pricing/gloinkdesigns_pricing_event.jpg"
+                        alt="Event Design Pricing by Gloink Designs. Services include: Retractable Banner design for $60, Table Runner design for $30, Info displays or Flyers for $50, and Invite Designs for $40. The image features high-quality mockups of a pink floral-themed table runner and a vertical banner for an author booth.">
+                    <br>
+                    <h5>Previous works:</h5>
+
+                    <!-- IMAGES OF AUTHOR EVENTS SCROLLING FROM LEFT TO RIGHT -->
+                    <div class="slide-scroll">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/eventdesigns_01.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/eventdesigns_02.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/eventdesigns_03.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/eventdesigns_04.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/eventdesigns_05.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
     </main>
 
+    <!-- BOTTOM DETAILS -->
+    <footer class="bottom-details-section">
+        <p>Art & Design</p>
+        <p>CC 2025 @gloinkdesigns</p>
+    </footer>
+
+
+    <!------------------------ JS CODE ------------------------>
+
     <!-- THIS IS THE FLOWER ANIMATION ON HOVER OF MENU ITEMS -->
+    <script src="./flower-animation.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const flower = document.getElementById('flower-bg');
-        const navItems = document.querySelectorAll('.item');
-
-        navItems.forEach(item => {
-            item.addEventListener('mouseenter', () => {
-                flower.style.display = 'block';
-                flower.style.display = 'block';
-                flower.classList.add('spin');
-            });
-
-            item.addEventListener('mousemove', (e) => {
-                const rect = item.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-
-                // Optional offsets to center the flower image
-                const offsetX = -25; // half of flower width (if 50px)
-                const offsetY = -25;
-
-                flower.style.left = `${rect.left + x + offsetX}px`;
-                flower.style.top = `${rect.top + y + offsetY}px`;
-            });
-
-            item.addEventListener('mouseleave', () => {
-                flower.style.display = 'none';
-                flower.style.display = 'none';
-                flower.classList.remove('spin');
-            });
-        });
-
-
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            loop: true,
+            speed: 1500,
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.8,
+                    spaceBetween: 5
+                },
+                482: { slidesPerView: 2.2 },
+                786: { slidesPerView: 2.5 },
+                992: { slidesPerView: 3 },
+            }
+        })
     </script>
 
+    <script src="./lightbox.js"></script>
 </body>
 
 </html>
